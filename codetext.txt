@@ -1,0 +1,49 @@
+/*******************************************************************************
+* Created by: Matthew Brean
+* Created on: 2016-09-12
+* Created for: ICS4U
+* Daily Assignment: Unit #1-04
+* This program calculates time to microwave 1 of 3 foods given food and portion
+*******************************************************************************/
+
+import java.util.Scanner;
+
+public class microwave {
+
+public static void main(String[] args)
+{
+ Scanner MICROWAVE = new Scanner(System.in);
+
+
+//for (;;){// (infinite loop)
+
+ System.out.println("Enter the type of food: pizza, soup, sub.");
+ String food = MICROWAVE.nextLine();
+
+double time;
+
+ if (food.equals("pizza")){
+  time = 0.75;}
+
+
+ else if (food.equals ("soup")){
+  time = 1.75;}
+
+ else if (food.equals ("sub")){
+  time = 1;}
+
+ else {
+ System.out.println("Invalid input.");}
+
+
+
+
+ System.out.println("Enter the portion (integer).");
+ double portion = MICROWAVE.nextDouble();
+
+ System.out.println("Time is: " + time * portion );
+
+ }
+
+ }
+//}
